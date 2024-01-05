@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;  
+            padding: 0;
+        }
+        ul,ol,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .list{}
+        .list li{
+            float: left;
+        }
+        .list li a{}
+
+        .clear_fix::before,.clear_fix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .box1{
+            width: 300px;height: 200px;background: saddlebrown;
+            float: left;
+        }
+        .box2{
+            width: 300px;height: 200px;background: slateblue;
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="list clear_fix">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+    </ul>
+    <div class="box clear_fix">
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatem molestias voluptatum inventore
+        possimus quis ullam? Explicabo exercitationem, totam sint vitae in dolorum minima. Officia architecto totam
+        corrupti ad velit?
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatem molestias voluptatum inventore
+        possimus quis ullam? Explicabo exercitationem, totam sint vitae in dolorum minima. Officia architecto totam
+        corrupti ad velit?
+    </div>
+</div><!-- box -->
+<div class="box3">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatem molestias voluptatum inventore
+    possimus quis ullam? Explicabo exercitationem, totam sint vitae in dolorum minima. Officia architecto totam
+    corrupti ad velit?
+</div>
+</body>
+
+</html>

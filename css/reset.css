@@ -1,0 +1,40 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-size: 14px;
+    color: #444;
+    font-family: 'SUITE-Regular';
+}
+table{
+    border-collapse: collapse;
+    /* 표 만들 때 보더가 이중선으로 나오는데
+     한 줄로만 나오도록하는 명령어 */
+}
+.clear_fix::before , .clear_fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
